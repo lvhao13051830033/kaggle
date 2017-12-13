@@ -34,9 +34,8 @@ classifier.fit(train_five,train_five_label)
 classifier2.fit(train_four,train_four_label)
 
 #输出测试集结果
-passenger = pa.DataFrame(testData['PassengerId'])
-passenger['Survived'] = ''
-passengers = passenger.copy()
+passengers = pa.DataFrame(testData['PassengerId'])
+passengers['Survived'] = ''
 # isnan()是numpy库里的函数
 # # 四个特征的情况
 # result_4 = classifier2.predict(testData_four)
