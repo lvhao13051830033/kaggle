@@ -17,14 +17,18 @@ dataFrame = pd.DataFrame({'id':[1,2,3,4,5],'age':[12,5,69,45,33]})
     列名 数据
  '''
 # 所以对ix[]使用dropna()的话，相当于删除了这行中有nan数据的那列数据
-dataFrame_fature = dataFrame
-dataFrame_fature.ix[0] = dataFrame[['id']].ix[0]
-print dataFrame_fature
-print dataFrame_fature.dropna()
-print dataFrame_fature.ix[0]
-print dataFrame_fature.ix[0].dropna()
-
-dataFrame2 = pd.DataFrame({'id':[1,2,3,4,5],'age':[12,5,69,np.nan,33]})
-print dataFrame2.dropna()
-print dataFrame2['id']
-print dataFrame2.ix[1]
+# dataFrame_fature = dataFrame
+# dataFrame_fature.ix[0] = dataFrame[['id']].ix[0]
+# print dataFrame_fature
+# print dataFrame_fature.dropna()
+# print dataFrame_fature.ix[0]
+# print dataFrame_fature.ix[0].dropna()
+#
+# dataFrame2 = pd.DataFrame({'id':[1,2,3,4,5],'age':[12,5,69,np.nan,33]})
+# print dataFrame2.dropna()
+# print dataFrame2['id']
+# print dataFrame2.ix[1]
+# a = np.array([1,2,3,4,5])
+# print a.reshape(1,-1)
+a = [0]*2
+print a
